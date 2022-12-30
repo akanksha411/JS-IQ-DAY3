@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DAY3</title>
+</head>
+<style>
+  h2{
+        text-decoration: underline;
+        color: rgb(163, 75, 12);
+        
+    }
+    h3{
+        font-size: 19px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: darkblue;
+    }
+    pre{
+      font-size: 18px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+    }
+    </style>
+<body>
+    <h2>Interview Preparation JS Day 3</h2>
+    <h3>1. How many operators do we have in JS ?</h3>
+    <pre>
+Ans-->A operator is capable of manipulating a certain value or operand
+                i)Arithmatic operator: +,-,/,%,*
+               ii)Comparison: ==,===,>,<
+              iii)logical: &&,||,!
+              iv)Assignment:  +=, -=
+                v)Ternary:  ?:
+               vi)Spread: ...
+    </pre>
+    <h3>2.What are arrow functions?</h3>
+    <pre>
+Ans--> Arrow function is introduced in ES6 version of JS. It is also known as fat arrow function.
+            It uses => operator to define the function and eliminate the function keyword.They are also called anonymous function.
+                    Example:
+                        let sum=(a,b)=>{return a+b}
+                        console.log(sum(5,7));        
+    </pre>
+    <h3>3.Difference between undefined vs not defined vs NaN</h3>
+    <pre>
+Ans--> Undefined--> Undefined is a value which indicates a variable has been declared but not initialized 
+                    let x;
+                    console.log(x);    
+            Not defined--> Not defined occurs when the variable is not declared but we trying to aceess.
+                    console.log(y);
+            NAN-->NAN is a special value that indicates an operation that was expected to return a number, has resulted an error. It can be cause by any operation which is not possible.
+                    console.log(Number("hello"))               
+    </pre>
+    <h3>4.What is callback hell</h3>
+    <pre>
+Ans-->Callback hell happens when we nest multiple callback within a function. The shape of resulting structure resembles a pyramid.
+                Example        
+                setTimeout(()=>{
+                    console.log(1)
+                    setTimeout(()=>{
+                        console.log(2)
+                    },2000)
+                },1000)
+    </pre>
+    <h3>5.Please explain Self Invoking Function and its code</h3>
+    <pre>
+Ans--> A self invoking function is also known as Immediately Invoked Function Expression or IIFE, that is defined and immediately called without requiring a separate function call.
+                Example
+                    (function(){
+                        let x='hello';
+                        console.log(x);
+                    }) ()
+    </pre>
+    <h3>6. What is the use of setTimeout</h3>
+    <pre>
+Ans--> setTimeout is a JS function which allows you to execute a function with a specific delay.
+                Example
+                        setTimeout(()=>{
+                            console.log('This is a example of setTimeout which will be executed after 1000ms(or 1sec'))
+                        },1000)        
+    </pre>
+</body>
+</html>
